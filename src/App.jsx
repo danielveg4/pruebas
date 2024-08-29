@@ -27,7 +27,7 @@ const App = () => {
 			<ReverseString phrase='una cadena de texto invertida' />
 			<IsEvenOrOdd number={25} />
 			<UppercaseText text='toma tu cadena de texto' />
-			<WriteGreeting name='Daniel' hour='14' />
+			<WriteGreeting name='Daniel' hour={14} />
 			<CalculatePower base='4' exponente='3' />
 			<CountWords text='"cuentame las palabras que hay"' />
 			<CalculateAge date='09/01/1991' />
