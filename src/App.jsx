@@ -28,7 +28,7 @@ const App = () => {
 			<IsEvenOrOdd number={25} />
 			<UppercaseText text='toma tu cadena de texto' />
 			<WriteGreeting name='Daniel' hour={14} />
-			<CalculatePower base='4' exponente='3' />
+			<CalculatePower base={4} exponente={3} />
 			<CountWords text='"cuentame las palabras que hay"' />
 			<CalculateAge date='09/01/1991' />
 			<FindMaximun numbers='1,3,5,7' />

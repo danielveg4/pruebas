@@ -2,6 +2,9 @@
 y devuelva un h2 con el texto "En la frase ... hay X palabras."" */
 
 const CountWords = ({ text }) => {
+	if (typeof text !== 'string') {
+		return <p>Wrong data!</p>;
+	}
 	const numeroEspacios = text.split(' ').length;
 	return (
 		<h2>
