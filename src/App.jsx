@@ -23,9 +23,9 @@ const App = () => {
 				year='2019'
 				genre='ficción'
 			/>
-			<ConvertMinutesToHours minutes='160' />
+			<ConvertMinutesToHours minutes={130} />
 			<ReverseString phrase='una cadena de texto invertida' />
-			<IsEvenOrOdd number='25' />
+			<IsEvenOrOdd number={25} />
 			<UppercaseText text='toma tu cadena de texto' />
 			<WriteGreeting name='Daniel' hour='14' />
 			<CalculatePower base='4' exponente='3' />
