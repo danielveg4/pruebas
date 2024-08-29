@@ -1,19 +1,27 @@
 /*  Crea un componente que reciba un array de números, calcule la media, y devuelva un h2 con el texto 
 "La media de los números [x],[y], [z] es [n] */
 
+import { validateNumbers } from '../../utils/validateNumbers';
+
 const CalculateAverage = ({ numbers }) => {
-	const numbersArray = numbers.split(',').map(Number);
-	let sumNumbers = 0;
-	for (let i = 0; i < numbersArray.length; i++) {
-		sumNumbers += numbersArray[i];
+	const areAllNumbers = validateNumbers(numbers);
+	if (!areAllNumbers) {
+		return <p>Wrong data</p>;
 	}
-	const media = sumNumbers / numbersArray.length;
+
+	const average = getAverage(numbers);
+
 	return (
 		<h2>
-			La media de los números {numbersArray[0]},{numbersArray[1]} y
-			{numbersArray[2]} es {media}
+			La media de los números {numbers.join(', ')} es {average}.
 		</h2>
 	);
+};
+
+const getAverage = numbers => {
+	const totalSum = numbers.reduce((sum, number) => sum + number);
+	const average = totalSum / numbers.length;
+	return average;
 };
 
 export default CalculateAverage;
