@@ -2,9 +2,28 @@
 "Si naciste el día dd/mm/aaaa tienes X años */
 
 const CalculateAge = ({ date }) => {
-	const year = new Date();
-	console.log(year.getFullYear());
-	return <h2>Si naciste el día {date} tienes X años</h2>;
+	const age = getAge(date);
+	return (
+		<h2>
+			Si naciste el día {date} tienes {age} años
+		</h2>
+	);
+};
+
+const getAge = date => {
+	const now = new Date();
+	const birth = new Date(date);
+
+	let age = now.getFullYear() - birth.getFullYear();
+
+	const monthDifferente = now.getMonth() - birth.getMonth();
+	const dayDifference = now.getDay() - birth.getDay();
+
+	if (monthDifferente < 0 || (monthDifferente === 0 && dayDifference < 0)) {
+		age--;
+	}
+
+	return age;
 };
 
 export default CalculateAge;

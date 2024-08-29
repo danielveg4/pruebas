@@ -8,7 +8,7 @@ const CountWords = ({ text }) => {
 	const numeroEspacios = text.split(' ').length;
 	return (
 		<h2>
-			En la frase {text} hay {numeroEspacios} palabras
+			En la frase &quot;{text}&quot; hay {numeroEspacios} palabras
 		</h2>
 	);
 };

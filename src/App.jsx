@@ -29,8 +29,8 @@ const App = () => {
 			<UppercaseText text='toma tu cadena de texto' />
 			<WriteGreeting name='Daniel' hour={14} />
 			<CalculatePower base={4} exponente={3} />
-			<CountWords text='"cuentame las palabras que hay"' />
-			<CalculateAge date='09/01/1991' />
+			<CountWords text='cuentame las palabras que hay' />
+			<CalculateAge date='01/09/1991' />
 			<FindMaximun numbers='1,3,5,7' />
 			<CalculateAverage numbers='3,5,7' />
 			<FindLongestString text='adivina cual es la palabra más largusima de todas' />
