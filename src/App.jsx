@@ -3,6 +3,7 @@ import CalculateAverage from './components/calculate-average/CalculateAverage';
 import CalculatePower from './components/calculate-power/calculatePower';
 import ConvertMinutesToHours from './components/convert-minutes-to-hours/convertMinutesToHours';
 import CountWords from './components/count-words/countWords';
+import DisplayPersonInfo from './components/display-person-info/displayPersonInfo';
 import FindLongestString from './components/find-longest-string/findLongestString';
 import FindMaximun from './components/find-maximun/findMaximum';
 import FirstComponent from './components/first-component/firstComponent';
@@ -33,9 +34,28 @@ const App = () => {
 			<CalculateAge date='01/09/1991' />
 			<FindMaximun numbers={[1, 3, 5, 7]} />
 			<CalculateAverage numbers={[3, 5, 7]} />
-			<FindLongestString text='adivina cual es la palabra más largusima de todas' />
+			<FindLongestString
+				words={[
+					'adivina',
+					'cual',
+					'es',
+					'la',
+					'palabra',
+					'más',
+					'largusima',
+					'de',
+					'todas'
+				]}
+			/>
+			<DisplayPersonInfo {...personInfo} />
 		</>
 	);
+};
+
+const personInfo = {
+	name: 'dani',
+	age: '33',
+	job: 'dev'
 };
 
 export default App;
