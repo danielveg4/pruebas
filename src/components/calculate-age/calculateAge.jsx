@@ -1,10 +1,12 @@
 /* Crea un componente que reciba una fecha de nacimiento y calcule la edad en años, devolviendo un h2 con el texto 
 "Si naciste el día dd/mm/aaaa tienes X años */
 
+import styles from './calculateAge.module.css';
+
 const CalculateAge = ({ date }) => {
 	const age = getAge(date);
 	return (
-		<h2>
+		<h2 className={styles.h2}>
 			Si naciste el día {date} tienes {age} años
 		</h2>
 	);
