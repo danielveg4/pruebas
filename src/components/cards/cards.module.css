@@ -1,5 +1,16 @@
 .container {
-    background-color: var(--very-light-gray);
     display: flex;
-    padding: 2rem;
+    flex-direction: column;
+    background-color: blue;
+    width: 15rem;
+    margin-inline: auto;
+}
+
+@media screen and (width > 768px) {
+    .container {
+        background-color: var(--very-light-gray);
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+    }
 }
