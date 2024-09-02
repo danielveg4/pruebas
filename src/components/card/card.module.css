@@ -28,4 +28,13 @@
     border-radius: 20px;
     padding: 0.5rem;
     width: 120px;
+    cursor: pointer;
+}
+
+@media (hover:hover) {
+    .button:hover {
+        background-color: var(--transparent-white);
+        outline: 1px solid white;
+        color: white;
+    }
 }
