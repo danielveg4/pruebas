@@ -1,6 +1,7 @@
 import CalculateAge from './components/calculate-age/calculateAge';
 import CalculateAverage from './components/calculate-average/CalculateAverage';
 import CalculatePower from './components/calculate-power/calculatePower';
+import Cards from './components/cards/Cards';
 import ConvertMinutesToHours from './components/convert-minutes-to-hours/convertMinutesToHours';
 import CountWords from './components/count-words/countWords';
 import DisplayPersonInfo from './components/display-person-info/displayPersonInfo';
@@ -17,6 +18,7 @@ const App = () => {
 	return (
 		<>
 			<h1>PRUEBAS</h1>
+			<Cards />
 			<FirstComponent name='daniel' surname='vega' />
 			<WriteBookInfo
 				title='El mar'
