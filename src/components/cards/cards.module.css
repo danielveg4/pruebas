@@ -1,0 +1,11 @@
+.title {
+    font-size: 2rem;
+    color:darkslategray;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: cadetblue;
+}

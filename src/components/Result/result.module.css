@@ -1,0 +1,13 @@
+.h1 {
+    font-size: 2rem;
+    color: darkslategray;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: grey;
+    margin: 1rem;
+    padding: 1rem;
+}

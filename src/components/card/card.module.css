@@ -1,0 +1,38 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.div-red {
+    border: 1px solid red;
+}
+
+.div-green {
+    border: 1px solid green;
+}
+
+.div-yellow {
+    border: 1px solid yellow;
+}
+
+.div-blue {
+    border: 1px solid blue;
+}
+
+.title {
+    font-size: 2rem;
+    color: darkslategray;
+}
+
+.text {
+    font-size: 1rem;
+    color: grey;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
